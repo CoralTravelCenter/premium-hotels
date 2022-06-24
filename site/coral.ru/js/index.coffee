@@ -55,4 +55,68 @@ Number::zeroPad = (len, c) -> String(@).zeroPad len, c
 window.DEBUG = 'APP NAME'
 
 ASAP ->
+    $flickityReady = $.Deferred()
 
+    preload 'https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js', -> $flickityReady.resolve()
+
+    $('body .subpage-search-bg > .background').append $('#_intro_markup').html()
+
+    $player_el = $('[data-vimeo-id]')
+    if $player_el.length
+        p = new Vimeo.Player $player_el.get(0),
+            id: $player_el.attr('data-vimeo-id')
+            background: 1
+            playsinline: 1
+            autopause: 0
+            title: 0
+            byline: 0
+            portrait: 0
+        p.on 'play', ->
+            $player_el.addClass 'playback'
+
+
+    $.when($flickityReady).done ->
+        $('.features-slider').flickity
+            cellSelector: '.feature'
+            groupCells: yes
+            contain: yes
+            imagesLoaded: true
+            prevNextButtons: yes
+            pageDots: no
+        setTimeout ->
+            $('.flickity-enabled').flickity 'resize'
+        , 0
+
+
+#    responsiveHandler = (query, match_handler, unmatch_handler) ->
+#        layout = matchMedia query
+#        layout.addEventListener 'change', (e) ->
+#            if e.matches then match_handler() else unmatch_handler()
+#        if layout.matches then match_handler() else unmatch_handler()
+#        layout
+
+#    responsiveHandler '(max-width:768px)',
+#        ->
+#            $player_el = $('.hidden-on-desktop[data-vimeo-id]')
+#            p = new Vimeo.Player $player_el.get(0),
+#                id: $player_el.attr('data-vimeo-id')
+#                background: 1
+#                playsinline: 1
+#                autopause: 0
+#                title: 0
+#                byline: 0
+#                portrait: 0
+#            p.on 'play', ->
+#                $player_el.addClass 'playback'
+#        ->
+#            $player_el = $('.hidden-on-mobile[data-vimeo-id]')
+#            p = new Vimeo.Player $player_el.get(0),
+#                id: $player_el.attr('data-vimeo-id')
+#                background: 1
+#                playsinline: 1
+#                autopause: 0
+#                title: 0
+#                byline: 0
+#                portrait: 0
+#            p.on 'play', ->
+#                $player_el.addClass 'playback'

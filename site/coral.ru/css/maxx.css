@@ -266,25 +266,30 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
     padding: 0 1em;
   }
 }
-#site-wrap section.generic .join-the-happiness {
+#site-wrap section.generic .maxx-royal-logos {
   position: relative;
-  width: 20em;
-  max-width: 400px;
-  background: url("../iii/join-the-happiness.png") center no-repeat;
+  width: 30em;
+  max-width: 847px;
+  background: url("../iii/maxx-royal-logos.png") center no-repeat;
   background-size: contain;
   margin-bottom: 2em;
 }
-#site-wrap section.generic .join-the-happiness:before {
+#site-wrap section.generic .maxx-royal-logos:before {
   content: '';
   display: block;
-  padding-top: 19.65601966%;
+  padding-top: 11.57024793%;
 }
-#site-wrap section.generic .join-the-happiness > * {
+#site-wrap section.generic .maxx-royal-logos > * {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 576px) {
+  #site-wrap section.generic .maxx-royal-logos {
+    max-width: 90vw;
+  }
 }
 #site-wrap section.generic .featrues-wrap {
   width: 100%;
@@ -380,21 +385,21 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
   justify-content: center;
   align-items: center;
 }
-#site-wrap section.generic .voyage-elite {
+#site-wrap section.generic .maxx-kemer-elite {
   position: relative;
   width: 90%;
   margin: auto;
-  background: url("../iii/voyage-elite-desktop.jpg") center no-repeat;
+  background: url("../iii/maxx-kemer-elite-desktop.jpg") center no-repeat;
   background-size: cover;
   border-radius: 1em;
   margin-top: 4em;
 }
-#site-wrap section.generic .voyage-elite:before {
+#site-wrap section.generic .maxx-kemer-elite:before {
   content: '';
   display: block;
   padding-top: 40.88586031%;
 }
-#site-wrap section.generic .voyage-elite > * {
+#site-wrap section.generic .maxx-kemer-elite > * {
   position: absolute;
   left: 0;
   top: 0;
@@ -402,16 +407,16 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
   height: 100%;
 }
 @media screen and (max-width: 768px) {
-  #site-wrap section.generic .voyage-elite {
+  #site-wrap section.generic .maxx-kemer-elite {
     position: relative;
-    background-image: url(../iii/voyage-elite-mobile.jpg);
+    background-image: url(../iii/maxx-kemer-elite-mobile.jpg);
   }
-  #site-wrap section.generic .voyage-elite:before {
+  #site-wrap section.generic .maxx-kemer-elite:before {
     content: '';
     display: block;
     padding-top: 71.40625%;
   }
-  #site-wrap section.generic .voyage-elite > * {
+  #site-wrap section.generic .maxx-kemer-elite > * {
     position: absolute;
     left: 0;
     top: 0;
@@ -419,7 +424,7 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
     height: 100%;
   }
 }
-#site-wrap section.generic .voyage-elite > * {
+#site-wrap section.generic .maxx-kemer-elite > * {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -428,20 +433,84 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
   color: white;
   padding: 5%;
 }
-#site-wrap section.generic .voyage-elite > * > * {
+#site-wrap section.generic .maxx-kemer-elite > * > * {
   max-width: 100%;
 }
-#site-wrap section.generic .voyage-elite > * h2 {
+#site-wrap section.generic .maxx-kemer-elite > * h2 {
   color: inherit;
   margin: 0;
 }
-#site-wrap section.generic .voyage-elite > * .elite {
+#site-wrap section.generic .maxx-kemer-elite > * .elite {
   font-size: 2em;
   letter-spacing: 0.1em;
   font-weight: normal;
   margin-top: 1em;
 }
-#site-wrap section.generic .voyage-elite > * .buttonlike {
+#site-wrap section.generic .maxx-kemer-elite > * .buttonlike {
+  margin-top: auto;
+}
+#site-wrap section.generic .maxx-belek-elite {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  background: url("../iii/maxx-belek-elite-desktop.jpg") center no-repeat;
+  background-size: cover;
+  border-radius: 1em;
+  margin-top: 4em;
+}
+#site-wrap section.generic .maxx-belek-elite:before {
+  content: '';
+  display: block;
+  padding-top: 40.88586031%;
+}
+#site-wrap section.generic .maxx-belek-elite > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section.generic .maxx-belek-elite {
+    position: relative;
+    background-image: url(../iii/maxx-belek-elite-mobile.jpg);
+  }
+  #site-wrap section.generic .maxx-belek-elite:before {
+    content: '';
+    display: block;
+    padding-top: 71.40625%;
+  }
+  #site-wrap section.generic .maxx-belek-elite > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+#site-wrap section.generic .maxx-belek-elite > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 5%;
+}
+#site-wrap section.generic .maxx-belek-elite > * > * {
+  max-width: 100%;
+}
+#site-wrap section.generic .maxx-belek-elite > * h2 {
+  color: inherit;
+  margin: 0;
+}
+#site-wrap section.generic .maxx-belek-elite > * .elite {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+  margin-top: 1em;
+}
+#site-wrap section.generic .maxx-belek-elite > * .buttonlike {
   margin-top: auto;
 }
 #site-wrap section.hotel {
@@ -527,27 +596,19 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
   }
 }
 #site-wrap section.hotel.hotel1 {
-  background-image: url(../iii/hotel-01-desktop.jpg);
+  background-image: url(../iii/maxx-hotel-01-desktop.jpg);
 }
 @media screen and (max-width: 768px) {
   #site-wrap section.hotel.hotel1 {
-    background-image: url(../iii/hotel-01-mobile.jpg);
+    background-image: url(../iii/maxx-hotel-01-mobile.jpg);
   }
 }
 #site-wrap section.hotel.hotel2 {
-  background-image: url(../iii/hotel-02-desktop.jpg);
+  background-image: url(../iii/maxx-hotel-02-desktop.jpg);
 }
 @media screen and (max-width: 768px) {
   #site-wrap section.hotel.hotel2 {
-    background-image: url(../iii/hotel-02-mobile.jpg);
-  }
-}
-#site-wrap section.hotel.hotel3 {
-  background-image: url(../iii/hotel-03-desktop.jpg);
-}
-@media screen and (max-width: 768px) {
-  #site-wrap section.hotel.hotel3 {
-    background-image: url(../iii/hotel-03-mobile.jpg);
+    background-image: url(../iii/maxx-hotel-02-mobile.jpg);
   }
 }
 #site-wrap section.hotel.map {
@@ -567,6 +628,30 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
     padding-top: 70.41666667%;
   }
   #site-wrap section.hotel.map > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+#site-wrap section.hotel.map-maxx {
+  background-image: url(../iii/maxx-map-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section.hotel.map-maxx {
+    position: relative;
+    max-width: none;
+    width: 100%;
+    border-radius: 0;
+    background-image: url(../iii/maxx-map-mobile.jpg);
+  }
+  #site-wrap section.hotel.map-maxx:before {
+    content: '';
+    display: block;
+    padding-top: 70.41666667%;
+  }
+  #site-wrap section.hotel.map-maxx > * {
     position: absolute;
     left: 0;
     top: 0;
@@ -729,12 +814,12 @@ body .subpage-search-bg > .background:before {
   content: unset;
 }
 body .subpage-search-bg > .background .intro-box {
-  background: url("../iii/voyage-intro-desktop.jpg") center no-repeat;
+  background: url("../iii/maxx-intro-desktop.jpg") center no-repeat;
   background-size: cover;
 }
 @media screen and (max-width: 768px) {
   body .subpage-search-bg > .background .intro-box {
-    background-image: url(../iii/voyage-intro-mobile.jpg);
+    background-image: url(../iii/maxx-intro-mobile.jpg);
   }
 }
 body .subpage-search-bg > .background .intro-box > .contenu {
@@ -785,18 +870,18 @@ body .subpage-search-bg > .background .intro-box > .contenu > * {
 body .subpage-search-bg > .background .intro-box > .contenu .wording-logo {
   position: relative;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   height: auto;
-  background: url("../iii/voyage-wording-logo.png") center no-repeat;
+  background: url("../iii/maxx-wording-logo.png") center no-repeat;
   background-size: contain;
 }
 body .subpage-search-bg > .background .intro-box > .contenu .wording-logo:before {
   content: '';
   display: block;
-  padding-top: 22.3390276%;
+  padding-top: 23.76093294%;
 }
 body .subpage-search-bg > .background .intro-box > .contenu .wording-logo > * {
   position: absolute;

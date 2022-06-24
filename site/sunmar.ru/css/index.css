@@ -77,11 +77,11 @@
   box-sizing: border-box;
 }
 #site-wrap section + section {
-  margin-top: 5%;
+  margin-top: 3%;
 }
 @media screen and (max-width: 768px) {
   #site-wrap section + section {
-    margin-top: 10%;
+    margin-top: 5%;
   }
 }
 #site-wrap section > .contenu {

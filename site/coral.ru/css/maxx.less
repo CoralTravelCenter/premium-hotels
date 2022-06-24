@@ -47,13 +47,16 @@
 					padding: 0 1em;
 				}
 			}
-			.join-the-happiness {
-				.proportional(407/80);
-				width: 20em;
-				max-width: 400px;
-				background: url("../iii/join-the-happiness.png") center no-repeat;
+			.maxx-royal-logos {
+				.proportional(847/98);
+				width: 30em;
+				max-width: 847px;
+				background: url("../iii/maxx-royal-logos.png") center no-repeat;
 				background-size: contain;
 				margin-bottom: 2em;
+				@media screen and (max-width: @narrow-breakpoint) {
+					max-width: 90vw;
+				}
 			}
 
 			.featrues-wrap {
@@ -137,17 +140,51 @@
 				.flex-center;
 			}
 
-			.voyage-elite {
+			.maxx-kemer-elite {
 				.proportional(1174/480);
 				width: 90%;
 				margin: auto;
-				background: url("../iii/voyage-elite-desktop.jpg") center no-repeat;
+				background: url("../iii/maxx-kemer-elite-desktop.jpg") center no-repeat;
 				background-size: cover;
 				border-radius: 1em;
 				margin-top: 4em;
 				@media screen and (max-width: @mobile-breakpoint) {
 					.proportional(640/457);
-					background-image: url(../iii/voyage-elite-mobile.jpg);
+					background-image: url(../iii/maxx-kemer-elite-mobile.jpg);
+				}
+				> * {
+					.flex-column;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					color: white;
+					padding: 5%;
+					h2 {
+						color: inherit;
+						margin: 0;
+					}
+					.elite {
+						font-size: 2em;
+						letter-spacing: .1em;
+						font-weight: normal;
+						margin-top: 1em;
+					}
+					.buttonlike {
+						margin-top: auto;
+					}
+				}
+			}
+			.maxx-belek-elite {
+				.proportional(1174/480);
+				width: 90%;
+				margin: auto;
+				background: url("../iii/maxx-belek-elite-desktop.jpg") center no-repeat;
+				background-size: cover;
+				border-radius: 1em;
+				margin-top: 4em;
+				@media screen and (max-width: @mobile-breakpoint) {
+					.proportional(640/457);
+					background-image: url(../iii/maxx-belek-elite-mobile.jpg);
 				}
 				> * {
 					.flex-column;
@@ -215,21 +252,15 @@
 			}
 
 			&.hotel1 {
-				background-image: url(../iii/hotel-01-desktop.jpg);
+				background-image: url(../iii/maxx-hotel-01-desktop.jpg);
 				@media screen and (max-width: @mobile-breakpoint) {
-					background-image: url(../iii/hotel-01-mobile.jpg);
+					background-image: url(../iii/maxx-hotel-01-mobile.jpg);
 				}
 			}
 			&.hotel2 {
-				background-image: url(../iii/hotel-02-desktop.jpg);
+				background-image: url(../iii/maxx-hotel-02-desktop.jpg);
 				@media screen and (max-width: @mobile-breakpoint) {
-					background-image: url(../iii/hotel-02-mobile.jpg);
-				}
-			}
-			&.hotel3 {
-				background-image: url(../iii/hotel-03-desktop.jpg);
-				@media screen and (max-width: @mobile-breakpoint) {
-					background-image: url(../iii/hotel-03-mobile.jpg);
+					background-image: url(../iii/maxx-hotel-02-mobile.jpg);
 				}
 			}
 			&.map {
@@ -240,6 +271,16 @@
 					width: 100%;
 					border-radius: 0;
 					background-image: url(../iii/voyage-map-mobile.jpg);
+				}
+			}
+			&.map-maxx {
+				background-image: url(../iii/maxx-map-desktop.jpg);
+				@media screen and (max-width: @mobile-breakpoint) {
+					.proportional(720/507);
+					max-width: none;
+					width: 100%;
+					border-radius: 0;
+					background-image: url(../iii/maxx-map-mobile.jpg);
 				}
 			}
 		}
@@ -346,10 +387,10 @@ body .subpage-search-bg {
 			content: unset;
 		}
 		.intro-box {
-			background: url("../iii/voyage-intro-desktop.jpg") center no-repeat;
+			background: url("../iii/maxx-intro-desktop.jpg") center no-repeat;
 			background-size: cover;
 			@media screen and (max-width: @mobile-breakpoint) {
-				background-image: url(../iii/voyage-intro-mobile.jpg);
+				background-image: url(../iii/maxx-intro-mobile.jpg);
 			}
 			> .contenu {
 				.proportional(1370/696);
@@ -366,14 +407,14 @@ body .subpage-search-bg {
 					max-width: none;
 				}
 				.wording-logo {
-					.proportional(1522/340);
+					.proportional(1372/326);
 					position: absolute;
-					top: 50%;
+					top: 60%;
 					left: 50%;
 					transform: translate(-50%, -50%);
 					width: 100%;
 					height: auto;
-					background: url("../iii/voyage-wording-logo.png") center no-repeat;
+					background: url("../iii/maxx-wording-logo.png") center no-repeat;
 					background-size: contain;
 				}
 			}
